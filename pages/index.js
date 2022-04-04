@@ -2,7 +2,16 @@ import Link from "next/link";
 import { useState } from "react";
 
 export default function Home() {
-  const [activeRotate, setActiveRotate] = useState(false);
+  const [activeNavbar, setActiveNavbar] = useState(false);
+  onscroll = function () {
+    const header = document.querySelector('header');
+    const fixedNav = header.offsetTop;
+    if (window.pageYOffset > fixedNav) {
+      header.classList.add('navbar-fixed');
+    } else {
+      header.classList.remove('navbar-fixed');
+    }
+  }
 
   return (
     <>
@@ -11,15 +20,15 @@ export default function Home() {
         <div className="container">
           <div className="flex items-center justify-between relative">
             <div className="px-4">
-              <a href="#home" className="font-bold text-lg text-primary block py-6">Okky Maheswara</a>
+              <a href="#home" className="font-bold text-lg text-primary block py-6 uppercase">Mahesora</a>
             </div>
             <div className="flex items-center px-4">
-              <button type="button" className="block absolute right-4 lg:hidden" onClick={() => setActiveRotate(!activeRotate)}>
-                <span className={`hamburger-line transition duration-300 ease-in-out origin-top-left ${activeRotate ? 'rotate-45' : ''}`}></span>
-                <span className={`hamburger-line transition duration-300 ease-in-out ${activeRotate ? 'scale-0' : ''}`}></span>
-                <span className={`hamburger-line transition duration-300 ease-in-out origin-bottom-left ${activeRotate ? '-rotate-45' : ''}`}></span>
+              <button type="button" className="block absolute right-4 lg:hidden" onClick={() => setActiveNavbar(!activeNavbar)}>
+                <span className={`hamburger-line transition duration-300 ease-in-out origin-top-left ${activeNavbar ? 'rotate-45' : ''}`}></span>
+                <span className={`hamburger-line transition duration-300 ease-in-out ${activeNavbar ? 'scale-0' : ''}`}></span>
+                <span className={`hamburger-line transition duration-300 ease-in-out origin-bottom-left ${activeNavbar ? '-rotate-45' : ''}`}></span>
               </button>
-              <nav className="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none``">
+              <nav onClick={() => setActiveNavbar(!activeNavbar)} className={`absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none ${activeNavbar ? '' : 'hidden'}`}>
                 <ul className="block lg:flex">
                   <li className="group">
                     <a href="#home" className="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Beranda</a>
