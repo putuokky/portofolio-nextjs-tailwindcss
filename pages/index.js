@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -22,7 +23,9 @@ export default function Home() {
         <div className="container">
           <div className="flex items-center justify-between relative">
             <div className="px-4">
-              <a href="#home" className="font-bold text-lg text-primary block py-6 uppercase">Mahesora</a>
+              <Link href="#home">
+                <a className="font-bold text-lg text-primary block py-6 uppercase">Mahesora</a>
+              </Link>
             </div>
             <div className="flex items-center px-4">
               <button type="button" className="block absolute right-4 lg:hidden" onClick={() => setActiveNavbar(!activeNavbar)}>
@@ -33,22 +36,34 @@ export default function Home() {
               <nav onClick={() => setActiveNavbar(!activeNavbar)} className={`absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none ${activeNavbar ? '' : 'hidden'}`}>
                 <ul className="block lg:flex">
                   <li className="group">
-                    <a href="#home" className="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Beranda</a>
+                    <Link href="#home">
+                      <a className="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Beranda</a>
+                    </Link>
                   </li>
                   <li className="group">
-                    <a href="#about" className="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Tentang Saya</a>
+                    <Link href="#about">
+                      <a className="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Tentang Saya</a>
+                    </Link>
                   </li>
                   <li className="group">
-                    <a href="#portfolio" className="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portfolio</a>
+                    <Link href="#portfolio">
+                      <a className="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portfolio</a>
+                    </Link>
                   </li>
                   <li className="group">
-                    <a href="#clients" className="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Clients</a>
+                    <Link href="#clients">
+                      <a className="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Clients</a>
+                    </Link>
                   </li>
                   <li className="group">
-                    <a href="#blog" className="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Blog</a>
+                    <Link href="#blog">
+                      <a className="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Blog</a>
+                    </Link>
                   </li>
                   <li className="group">
-                    <a href="#contact" className="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Contact</a>
+                    <Link href="#contact">
+                      <a className="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Contact</a>
+                    </Link>
                   </li>
                 </ul>
               </nav>
@@ -66,11 +81,13 @@ export default function Home() {
               <h1 className="text-base font-semibold text-primary md:text-xl">Hallo Semua 🤞👏, saya <span className="block font-bold text-dark text-4xl mt-1 lg:text-5xl">Okky Maheswara</span></h1>
               <h2 className="font-medium text-secondary text-lg mt-2 mb-5 lg:text-2xl">Lecturer & <span className="text-dark">Content Creator</span></h2>
               <p className="font-medium text-secondary mb-10 leading-relaxed">Belajar web programming itu mudah dan menyenangkan bukan. <span className="text-dark font-bold">bukann!</span></p>
-              <a href="#" className="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</a>
+              <Link href="#">
+                <a className="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</a>
+              </Link>
             </div>
             <div className="w-full self-end px-4 lg:w-1/2">
               <div className="relative mt-10 lg:mt-9 lg:right-0">
-                <img src="/img/sandhika.png" alt="Okky Maheswara" className="max-w-full mx-auto" />
+                <Image src="/img/sandhika.png" height={500} width={500} alt="Okky Maheswara" className="max-w-full mx-auto" />
                 <span className="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2 md:scale-125">
                   <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                     <path fill="#14B8A6" d="M23.1,-24.1C37.2,-9,61,-4.5,65.6,4.7C70.3,13.9,56,27.7,41.9,28.3C27.7,28.9,13.9,16.2,3.7,12.5C-6.4,8.7,-12.8,14,-26.8,13.4C-40.8,12.8,-62.4,6.4,-69.3,-6.9C-76.1,-20.1,-68.3,-40.3,-54.3,-55.4C-40.3,-70.5,-20.1,-80.5,-7.8,-72.7C4.5,-64.9,9,-39.2,23.1,-24.1Z" transform="translate(100 100) scale(1.1)" />
@@ -152,28 +169,28 @@ export default function Home() {
           <div className="w-full px-4 flex flex-wrap justify-center lg:w-10/12 lg:mx-auto">
             <div className="mb-12 p-4 md:w-1/2">
               <div className="rounded-md shadow-md overflow-hidden">
-                <img src="/img/portfolio/1.png" alt="Portfolio 1" width="w-full" />
+                <Image src="/img/portfolio/1.png" alt="Portfolio 1" height={400} width={650} />
               </div>
               <h3 className="font-semibold text-xl text-dark mt-5 mb-3">Portfolio Pertama Saya</h3>
               <p className="font-medium text-base text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nesciunt quisquam distinctio.</p>
             </div>
             <div className="mb-12 p-4 md:w-1/2">
               <div className="rounded-md shadow-md overflow-hidden">
-                <img src="/img/portfolio/2.png" alt="Portfolio 2" width="w-full" />
+                <Image src="/img/portfolio/2.png" alt="Portfolio 2" height={400} width={650} />
               </div>
               <h3 className="font-semibold text-xl text-dark mt-5 mb-3">Portfolio Kedua Saya</h3>
               <p className="font-medium text-base text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nesciunt quisquam distinctio.</p>
             </div>
             <div className="mb-12 p-4 md:w-1/2">
               <div className="rounded-md shadow-md overflow-hidden">
-                <img src="/img/portfolio/3.png" alt="Portfolio 2" width="w-full" />
+                <Image src="/img/portfolio/3.png" alt="Portfolio 2" height={400} width={650} />
               </div>
               <h3 className="font-semibold text-xl text-dark mt-5 mb-3">Portfolio Ketiga Saya</h3>
               <p className="font-medium text-base text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nesciunt quisquam distinctio.</p>
             </div>
             <div className="mb-12 p-4 md:w-1/2">
               <div className="rounded-md shadow-md overflow-hidden">
-                <img src="/img/portfolio/4.png" alt="Portfolio 4" width="w-full" />
+                <Image src="/img/portfolio/4.png" alt="Portfolio 4" height={400} width={650} />
               </div>
               <h3 className="font-semibold text-xl text-dark mt-5 mb-3">Portfolio Keempat Saya</h3>
               <p className="font-medium text-base text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nesciunt quisquam distinctio.</p>
@@ -195,18 +212,26 @@ export default function Home() {
           </div>
           <div className="w-full px-4">
             <div className="flex flex-wrap items-center justify-center">
-              <a href="#" className="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                <img src="/img/clients/google.svg" alt="Google" />
-              </a>
-              <a href="#" className="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                <img src="/img/clients/gojek.svg" alt="Gojek" />
-              </a>
-              <a href="#" className="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                <img src="/img/clients/tokopedia.svg" alt="Tokopedia" />
-              </a>
-              <a href="#" className="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-                <img src="/img/clients/traveloka.svg" alt="Traveloka" />
-              </a>
+              <Link href="#">
+                <a className="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                  <Image src="/img/clients/google.svg" height={90} width={270} alt="Google" />
+                </a>
+              </Link>
+              <Link href="#">
+                <a className="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                  <Image src="/img/clients/gojek.svg" height={25} width={110} alt="Gojek" />
+                </a>
+              </Link>
+              <Link href="#">
+                <a className="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                  <Image src="/img/clients/tokopedia.svg" height={85} width={400} alt="Tokopedia" />
+                </a>
+              </Link>
+              <Link href="#">
+                <a className="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
+                  <Image src="/img/clients/traveloka.svg" height={200} width={500} alt="Traveloka" />
+                </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -229,10 +254,14 @@ export default function Home() {
                 <img src="https://source.unsplash.com/360x200?programming" alt="Programming" className="w-full" />
                 <div className="py-8 px-6">
                   <h3>
-                    <a href="#" className="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Tips Belajar Programming</a>
+                    <Link href="#">
+                      <a className="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Tips Belajar Programming</a>
+                    </Link>
                   </h3>
                   <p className="font-medium text-base text-secondary mb-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, similique.</p>
-                  <a href="#" className="font-medium text-sm text-white bg-primary py-3 px-4 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+                  <Link href="#">
+                    <a className="font-medium text-sm text-white bg-primary py-3 px-4 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -241,10 +270,14 @@ export default function Home() {
                 <img src="https://source.unsplash.com/360x200?mechanical+keyboard" alt="Mechanical Keyboard" className="w-full" />
                 <div className="py-8 px-6">
                   <h3>
-                    <a href="#" className="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Review Keyboad Mechanical Terbaru</a>
+                    <Link href="#">
+                      <a className="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Review Keyboad Mechanical Terbaru</a>
+                    </Link>
                   </h3>
                   <p className="font-medium text-base text-secondary mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et molestiae rerum repellat?</p>
-                  <a href="#" className="font-medium text-sm text-white bg-primary py-3 px-4 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+                  <Link href="#">
+                    <a className="font-medium text-sm text-white bg-primary py-3 px-4 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -253,10 +286,14 @@ export default function Home() {
                 <img src="https://source.unsplash.com/360x200?coffe" alt="Coffe" className="w-full" />
                 <div className="py-8 px-6">
                   <h3>
-                    <a href="#" className="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Menikmati Coffe Disaat Ngoding</a>
+                    <Link href="#">
+                      <a className="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">Menikmati Coffe Disaat Ngoding</a>
+                    </Link>
                   </h3>
                   <p className="font-medium text-base text-secondary mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores veniam repellendus eum.</p>
-                  <a href="#" className="font-medium text-sm text-white bg-primary py-3 px-4 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+                  <Link href="#">
+                    <a className="font-medium text-sm text-white bg-primary py-3 px-4 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -313,13 +350,19 @@ export default function Home() {
               <h3 className="font-semibold text-xl text-white mb-5">Kategori Tulisan</h3>
               <ul className="text-slate-300">
                 <li>
-                  <a href="#" className="inline-block text-base hover:text-primary mb-3">Programming</a>
+                  <Link href="#">
+                    <a className="inline-block text-base hover:text-primary mb-3">Programming</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="inline-block text-base hover:text-primary mb-3">Hardware</a>
+                  <Link href="#">
+                    <a className="inline-block text-base hover:text-primary mb-3">Hardware</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="inline-block text-base hover:text-primary mb-3">Gaya Hidup</a>
+                  <Link href="#">
+                    <a className="inline-block text-base hover:text-primary mb-3">Gaya Hidup</a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -327,22 +370,34 @@ export default function Home() {
               <h3 className="font-semibold text-xl text-white mb-5">Tautan</h3>
               <ul className="text-slate-300">
                 <li>
-                  <a href="#home" className="inline-block text-base hover:text-primary mb-3">Beranda</a>
+                  <Link href="#home">
+                    <a className="inline-block text-base hover:text-primary mb-3">Beranda</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#about" className="inline-block text-base hover:text-primary mb-3">Tentang Saya</a>
+                  <Link href="#about">
+                    <a className="inline-block text-base hover:text-primary mb-3">Tentang Saya</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#portfolio" className="inline-block text-base hover:text-primary mb-3">Portfolio</a>
+                  <Link href="#portfolio">
+                    <a className="inline-block text-base hover:text-primary mb-3">Portfolio</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#clients" className="inline-block text-base hover:text-primary mb-3">Client</a>
+                  <Link href="#clients">
+                    <a className="inline-block text-base hover:text-primary mb-3">Client</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#blog" className="inline-block text-base hover:text-primary mb-3">Blog</a>
+                  <Link href="#blog">
+                    <a className="inline-block text-base hover:text-primary mb-3">Blog</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#contact" className="inline-block text-base hover:text-primary mb-3">Contact</a>
+                  <Link href="#contact">
+                    <a className="inline-block text-base hover:text-primary mb-3">Contact</a>
+                  </Link>
                 </li>
               </ul>
             </div>
