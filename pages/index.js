@@ -386,7 +386,7 @@ export default function Home() {
                 </a>
               </Link>
             </div>
-            <p className="font-medium text-xs text-slate-500 text-center">Dibuat dengan 🧡 oleh <a href="https://www.instagram.com/okkymahesora/" target="_blank" className="font-bold text-primary">Okky Maheswara</a> menggunakan <a href="https://tailwindcss.com/" target="_blank" className="font-bold text-sky-500">Tailwind CSS</a></p>
+            <p className="font-medium text-xs text-slate-500 text-center">Dibuat dengan 🧡 oleh <a href="https://www.instagram.com/okkymahesora/" target={"_blank"} className="font-bold text-primary">Okky Maheswara</a> menggunakan <a href="https://tailwindcss.com/" target={"_blank"} className="font-bold text-sky-500">Tailwind CSS</a></p>
           </div>
         </div>
       </footer>
