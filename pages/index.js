@@ -251,7 +251,7 @@ export default function Home() {
           <div className="flex flex-wrap">
             <div className="w-full px-4 lg:w-1/2 xl:w-1/3">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
-                <img src="https://source.unsplash.com/360x200?programming" alt="Programming" className="w-full" />
+                <Image src="/img/blog/programming.jpg" height={200} width={360} alt="Programming" className="w-full" />
                 <div className="py-8 px-6">
                   <h3>
                     <Link href="#">
@@ -267,7 +267,7 @@ export default function Home() {
             </div>
             <div className="w-full px-4 lg:w-1/2 xl:w-1/3">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
-                <img src="https://source.unsplash.com/360x200?mechanical+keyboard" alt="Mechanical Keyboard" className="w-full" />
+                <Image src="/img/blog/mechanical-keyboard.jpg" height={200} width={360} alt="Mechanical Keyboard" className="w-full" />
                 <div className="py-8 px-6">
                   <h3>
                     <Link href="#">
@@ -283,7 +283,7 @@ export default function Home() {
             </div>
             <div className="w-full px-4 lg:w-1/2 xl:w-1/3">
               <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
-                <img src="https://source.unsplash.com/360x200?coffe" alt="Coffe" className="w-full" />
+                <Image src="/img/blog/coffe.jpg" height={200} width={360} alt="Coffe" className="w-full" />
                 <div className="py-8 px-6">
                   <h3>
                     <Link href="#">
@@ -442,13 +442,7 @@ export default function Home() {
               </Link>
             </div>
             <p className="font-medium text-xs text-slate-500 text-center">
-              Dibuat dengan 🧡 oleh
-              <Link href="https://www.instagram.com/okkymahesora/">
-                <a target={"_blank"} className="font-bold text-primary">Okky Maheswara</a>
-              </Link> menggunakan
-              <Link href="https://tailwindcss.com/">
-                <a target={"_blank"} className="font-bold text-sky-500">Tailwind CSS</a>
-              </Link>
+              Dibuat dengan 🧡 oleh <Link href="https://www.instagram.com/okkymahesora/"><a target={"_blank"} className="font-bold text-primary">Okky Maheswara</a></Link> menggunakan <Link href="https://tailwindcss.com/"><a target={"_blank"} className="font-bold text-sky-500">Tailwind CSS</a></Link>
             </p>
           </div>
         </div>
