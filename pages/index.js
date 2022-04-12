@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <>
       {/* Header Start */}
-      <header onScroll={() => setHeaderOn()} className="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+      <header className="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
         <div className="container">
           <div className="flex items-center justify-between relative">
             <div className="px-4">
@@ -64,6 +64,18 @@ export default function Home() {
                     <Link href="#contact">
                       <a className="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Contact</a>
                     </Link>
+                  </li>
+                  <li className="flex items-center pl-8">
+                    <div className="flex">
+                      <span className="mr-2 text-sm text-slate-500">light</span>
+                      <input type="checkbox" className="hidden" id="dark-toggle" />
+                      <label htmlFor="dark-toggle">
+                        <div className="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                          <div className="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                        </div>
+                      </label>
+                      <span className="ml-2 text-sm text-slate-500">dark</span>
+                    </div>
                   </li>
                 </ul>
               </nav>
@@ -448,6 +460,12 @@ export default function Home() {
         </div>
       </footer>
       {/* Footer Section End */}
+
+      {/* Back to Top Start */}
+      <a href="#home" className="fixed flex justify-center items-center z-[9999] bottom-4 right-4 p-4 h-14 w-14 bg-primary rounded-full hover:animate-pulse">
+        <span className="block w-5 h-5 border-t-2 border-l-2 rotate-45 mt-2"></span>
+      </a>
+      {/* Back to Top End */}
     </>
   )
 }

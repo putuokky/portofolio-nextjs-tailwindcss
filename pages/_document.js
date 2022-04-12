@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
   return (
-    <Html>
+    <Html className='scroll-smooth'>
       <Head>
         <title>Mahesora - It's Show Time</title>
         <meta name="description" content="Portofolio My Sites" />
