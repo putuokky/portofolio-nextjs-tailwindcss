@@ -12,8 +12,8 @@ export default function Home() {
         <div className="container">
           <div className="flex items-center justify-between relative">
             <div className="px-4">
-              <Link href="#home">
-                <a className="font-bold text-lg text-primary block py-6 uppercase">Mahesora</a>
+              <Link href="/">
+                <a className="font-bold text-3xl text-primary block py-6 uppercase font-serif">Mahesora</a>
               </Link>
             </div>
             <div className="flex items-center px-4">
@@ -24,16 +24,6 @@ export default function Home() {
               </button>
               <nav onClick={() => setActiveNavbar(!activeNavbar)} className={`absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none ${activeNavbar ? '' : 'hidden'}`}>
                 <ul className="block lg:flex">
-                  <li className="group">
-                    <Link href="#home">
-                      <a className="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Beranda</a>
-                    </Link>
-                  </li>
-                  <li className="group">
-                    <Link href="#about">
-                      <a className="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Tentang Saya</a>
-                    </Link>
-                  </li>
                   <li className="group">
                     <Link href="#portfolio">
                       <a className="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Portfolio</a>
@@ -49,12 +39,7 @@ export default function Home() {
                       <a className="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Blog</a>
                     </Link>
                   </li>
-                  <li className="group">
-                    <Link href="#contact">
-                      <a className="text-base text-dark py-2 mx-8 flex group-hover:text-primary">Contact</a>
-                    </Link>
-                  </li>
-                  <li className="flex items-center pl-8">
+                  {/* <li className="flex items-center pl-8">
                     <div className="flex">
                       <span className="mr-2 text-sm text-slate-500">light</span>
                       <input type="checkbox" className="hidden" id="dark-toggle" />
@@ -65,7 +50,7 @@ export default function Home() {
                       </label>
                       <span className="ml-2 text-sm text-slate-500">dark</span>
                     </div>
-                  </li>
+                  </li> */}
                 </ul>
               </nav>
             </div>
@@ -75,7 +60,7 @@ export default function Home() {
       {/* Header End */}
 
       {/* Hero Section Start */}
-      <section id="home" className="pt-36">
+      <section id="home" className="pt-16">
         <div className="container">
           <div className="flex flex-wrap">
             <div className="w-full self-center px-4 lg:w-1/2">
@@ -83,7 +68,7 @@ export default function Home() {
               <h2 className="font-medium text-secondary text-lg mt-2 mb-5 lg:text-2xl">Lecturer & <span className="text-dark">Content Creator</span></h2>
               <p className="font-medium text-secondary mb-10 leading-relaxed">Belajar web programming itu mudah dan menyenangkan bukan. <span className="text-dark font-bold">bukann!</span></p>
               <Link href="#">
-                <a className="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</a>
+                <a className="text-base font-semibold text-white bg-primary py-3 px-6 rounded-full transition duration-700 ease-in-out hover:shadow-lg hover:opacity-80">Email Saya</a>
               </Link>
             </div>
             <div className="w-full self-end px-4 lg:w-1/2">
@@ -303,107 +288,10 @@ export default function Home() {
       </section>
       {/* Blog Section End */}
 
-      {/* Contact Section Start */}
-      <section id="contact" className="pt-36 pb-32">
-        <div className="container">
-          <div className="w-full px-4">
-            <div className="max-w-lg mx-auto text-center mb-16">
-              <h4 className="font-semibold text-lg text-primary mb-2">Contact</h4>
-              <h2 className="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Hubungi Kami</h2>
-              <p className="font-medium text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quas ipsum dicta porro.</p>
-            </div>
-          </div>
-          <form>
-            <div className="w-full lg:w-2/3 lg:mx-auto">
-              <div className="w-full px-4 mb-8">
-                <label htmlFor="name" className="text-base font-bold text-primary">Nama</label>
-                <input type="text" id="name" className="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
-              </div>
-              <div className="w-full px-4 mb-8">
-                <label htmlFor="email" className="text-base font-bold text-primary">Email</label>
-                <input type="email" id="email" className="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary" />
-              </div>
-              <div className="w-full px-4 mb-8">
-                <label htmlFor="message" className="text-base font-bold text-primary">Pesan</label>
-                <textarea type="email" id="email" className="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"></textarea>
-              </div>
-              <div className="w-full">
-                <button className="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500">Kirim</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </section>
-      {/* Contact Section End */}
-
       {/* Footer Section Start */}
-      <footer className="bg-dark pt-24 pb-12">
+      <footer className="bg-dark pt-10 pb-12">
         <div className="container">
-          <div className="flex flex-wrap">
-            <div className="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
-              <h2 className="font-bold text-4xl text-white mb-5">Mahesora</h2>
-              <h3 className="font-bold text-2xl mb-2">Hubungi Kami</h3>
-              <p>okkymahes@gmail.com</p>
-              <p>Jalan Tegal Wangi</p>
-              <p>Denpasar</p>
-            </div>
-            <div className="w-full px-4 mb-12 md:w-1/3">
-              <h3 className="font-semibold text-xl text-white mb-5">Kategori Tulisan</h3>
-              <ul className="text-slate-300">
-                <li>
-                  <Link href="#">
-                    <a className="inline-block text-base hover:text-primary mb-3">Programming</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#">
-                    <a className="inline-block text-base hover:text-primary mb-3">Hardware</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#">
-                    <a className="inline-block text-base hover:text-primary mb-3">Gaya Hidup</a>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="w-full px-4 mb-12 md:w-1/3">
-              <h3 className="font-semibold text-xl text-white mb-5">Tautan</h3>
-              <ul className="text-slate-300">
-                <li>
-                  <Link href="#home">
-                    <a className="inline-block text-base hover:text-primary mb-3">Beranda</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#about">
-                    <a className="inline-block text-base hover:text-primary mb-3">Tentang Saya</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#portfolio">
-                    <a className="inline-block text-base hover:text-primary mb-3">Portfolio</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#clients">
-                    <a className="inline-block text-base hover:text-primary mb-3">Client</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#blog">
-                    <a className="inline-block text-base hover:text-primary mb-3">Blog</a>
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#contact">
-                    <a className="inline-block text-base hover:text-primary mb-3">Contact</a>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="w-full pt-10 border-t border-slate-700">
+          <div className="w-full">
             <div className="flex items-center justify-center mb-5">
               {/* Facebook */}
               <Link href="https://facebook.com/okkymahes">
@@ -443,7 +331,7 @@ export default function Home() {
               </Link>
             </div>
             <p className="font-medium text-xs text-slate-500 text-center">
-              Dibuat dengan 🧡 oleh <Link href="https://www.instagram.com/okkymahesora/"><a target={"_blank"} className="font-bold text-primary">Okky Maheswara</a></Link> menggunakan <Link href="https://tailwindcss.com/"><a target={"_blank"} className="font-bold text-sky-500">Tailwind CSS</a></Link>
+              Dibuat dengan sepenuh 🧡 oleh <Link href="#home"><a className="font-bold text-primary">Okky Maheswara</a></Link>
             </p>
           </div>
         </div>
@@ -451,7 +339,7 @@ export default function Home() {
       {/* Footer Section End */}
 
       {/* Back to Top Start */}
-      <a href="#home" className="fixed flex justify-center items-center z-[9999] bottom-4 right-4 p-4 h-14 w-14 bg-primary rounded-full hover:animate-pulse">
+      <a href="#home" className="fixed flex justify-center items-center z-[9999] bottom-4 right-4 p-4 h-14 w-14 bg-primary rounded-full hover:animate-bounce">
         <span className="block w-5 h-5 border-t-2 border-l-2 rotate-45 mt-2"></span>
       </a>
       {/* Back to Top End */}

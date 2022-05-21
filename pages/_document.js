@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html className='scroll-smooth'>
       <Head>
-        <title>Mahesora - It's Show Time</title>
+        <title>Mahesora &mdash; It's Show Time</title>
         <meta name="description" content="Portofolio My Sites" />
         <meta name="keywords" content="HTML, CSS, JavaScript, NextJS, Computer, Portofolio" />
         <meta name="author" content="Okky Maheswara" />
