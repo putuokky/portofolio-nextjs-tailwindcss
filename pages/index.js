@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <>
       {/* Header Start */}
-      <header className="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+      <header className="bg-transparent absolute top-0 left-0 w-full flex items-center z-10 sticky bg-white/80">
         <div className="container">
           <div className="flex items-center justify-between relative">
             <div className="px-4">
