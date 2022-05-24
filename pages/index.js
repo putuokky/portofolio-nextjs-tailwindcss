@@ -87,7 +87,7 @@ export default function Home() {
       {/* Hero Section End */}
 
       {/* About Section Start */}
-      <section id="about" className="pt-36 pb-3">
+      <section id="about" className="pt-36 pb-16">
         <div className="container">
           <div className="flex flex-wrap">
             <div className="w-full px-4 mb-10 lg:w-1/2">
@@ -339,7 +339,7 @@ export default function Home() {
       {/* Footer Section End */}
 
       {/* Back to Top Start */}
-      <a href="#home" className="fixed flex justify-center items-center z-[9999] bottom-4 right-4 p-4 h-14 w-14 bg-primary rounded-full hover:animate-bounce">
+      <a href="#home" className="fixed bottom-4 right-4 z-[9999] h-14 w-14 rounded-full bg-primary p-4 flex justify-center items-center hover:animate-bounce">
         <span className="block w-5 h-5 border-t-2 border-l-2 rotate-45 mt-2"></span>
       </a>
       {/* Back to Top End */}
