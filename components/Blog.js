@@ -31,7 +31,7 @@ export default function Blog() {
           </div>
           <div className="w-full px-4 lg:w-1/2 xl:w-1/3">
             <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
-              <Image src="/img/blog/mechanical-keyboard.jpg" height={230} width={450} alt="Mechanical Keyboard" className="w-full" />
+              <Image src="/img/blog/mechanical-keyboard.jpg" height={230} width={450} layout="responsive" alt="Mechanical Keyboard" className="w-full" />
               <div className="py-8 px-6">
                 <h3>
                   <Link href="#">
@@ -47,7 +47,7 @@ export default function Blog() {
           </div>
           <div className="w-full px-4 lg:w-1/2 xl:w-1/3">
             <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
-              <Image src="/img/blog/coffe.jpg" height={230} width={450} alt="Coffe" className="w-full" />
+              <Image src="/img/blog/coffe.jpg" height={230} width={450} layout="responsive" alt="Coffe" className="w-full" />
               <div className="py-8 px-6">
                 <h3>
                   <Link href="#">
