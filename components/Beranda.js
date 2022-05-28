@@ -18,9 +18,9 @@ export default function Beranda() {
           <div className="w-full self-end px-4 lg:w-1/2">
             <div className="relative mt-10 lg:mt-9 lg:right-0">
               <Image src="/img/sandhika.png" height={500} width={500} alt="Okky Maheswara" className="max-w-full mx-auto relative z-10" />
-              <span className="absolute -bottom-0 left-1/2 -translate-x-1/2 md:scale-125">
-                <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="#14B8A6" d="M23.1,-24.1C37.2,-9,61,-4.5,65.6,4.7C70.3,13.9,56,27.7,41.9,28.3C27.7,28.9,13.9,16.2,3.7,12.5C-6.4,8.7,-12.8,14,-26.8,13.4C-40.8,12.8,-62.4,6.4,-69.3,-6.9C-76.1,-20.1,-68.3,-40.3,-54.3,-55.4C-40.3,-70.5,-20.1,-80.5,-7.8,-72.7C4.5,-64.9,9,-39.2,23.1,-24.1Z" transform="translate(100 100) scale(1.1)" />
+              <span className="absolute bottom-0 left-1/2 -translate-x-1/2 md:scale-125">
+                <svg width={400} height={400} viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#14b8a6" d="M47.4,-51C59.2,-35.6,65.1,-17.8,63.4,-1.7C61.7,14.5,52.6,28.9,40.8,36.6C28.9,44.2,14.5,45,-2,47C-18.4,49,-36.8,52.1,-45.4,44.5C-53.9,36.8,-52.5,18.4,-51.2,1.3C-49.9,-15.8,-48.7,-31.7,-40.2,-47.1C-31.7,-62.4,-15.8,-77.3,1,-78.3C17.8,-79.2,35.6,-66.3,47.4,-51Z" transform="translate(100 100) scale(1.1)"></path>
                 </svg>
               </span>
             </div>
