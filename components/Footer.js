@@ -11,7 +11,7 @@ export default function Footer() {
             <Social />
           </div>
           <p className="font-medium text-xs text-slate-500 text-center">
-            Dibuat dengan sepenuh 🧡 oleh <Link href="#home"><a className="font-bold text-primary">Okky Maheswara</a></Link>
+            Dibuat dengan sepenuh 🧡 oleh <Link href="/"><a className="font-bold text-primary">Okky Maheswara</a></Link>
           </p>
         </div>
       </div>
