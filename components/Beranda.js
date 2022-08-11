@@ -12,7 +12,10 @@ export default function Beranda() {
             <h2 className="mt-2 mb-5 text-lg font-medium text-secondary lg:text-2xl">Developer & <span className="text-dark dark:text-white">Content Creator</span></h2>
             <p className="mb-10 font-medium leading-relaxed text-secondary">Belajar web programming itu mudah dan menyenangkan bukan. <span className="font-bold text-dark dark:text-white">bukann!</span></p>
             <Link href="mailto:nama-email@gmail.com">
-              <a className="px-6 py-3 text-base font-semibold text-white transition duration-700 ease-in-out rounded-full bg-primary hover:shadow-lg hover:opacity-80">Email Saya</a>
+              <a className="px-6 py-3 mx-3 text-base font-semibold text-white transition duration-500 ease-in-out rounded-3xl bg-primary hover:shadow-lg hover:opacity-70">Hire Me</a>
+            </Link>
+            <Link href="#">
+              <a className="px-6 py-3 mx-3 text-base font-semibold text-white transition duration-500 ease-in-out rounded-3xl bg-primary hover:shadow-lg hover:opacity-70">Download CV</a>
             </Link>
           </div>
           <div className="self-end w-full px-4 lg:w-1/2">

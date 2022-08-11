@@ -1,0 +1,6 @@
+kekurangan
+- setting tema gelap
+- SEO
+- arah bawah di klik langsung kembali ke atas
+- sesi contact
+- footer card

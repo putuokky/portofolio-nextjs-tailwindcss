@@ -7,7 +7,7 @@ export default function About() {
         <div className="flex flex-wrap">
           <div className="w-full px-4 mb-10 lg:w-1/2">
             <h4 className="mb-3 text-lg font-bold uppercase text-primary">Tentang Saya</h4>
-            <h2 className="max-w-md mb-5 text-3xl font-bold text-dark lg:text-4xl dark:text-white">Yuk Belajar cuyyy</h2>
+            <h2 className="max-w-md mb-5 text-3xl font-bold text-dark lg:text-4xl dark:text-white">Yuk Gass</h2>
             <p className="max-w-xl text-base font-medium text-secondary lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi magnam magni explicabo illum tempore aliquid consequuntur.</p>
           </div>
           <div className="w-full px-4 lg:w-1/2">
