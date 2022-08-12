@@ -2,6 +2,7 @@ import About from "@components/About";
 import Beranda from "@components/Beranda";
 import Blog from "@components/Blog";
 import Client from "@components/Client";
+import Contact from "@components/Contact";
 import Layout from "@components/Layout";
 import Portfolio from "@components/Portfolio";
 
@@ -29,6 +30,10 @@ export default function Home() {
       {/* Blog Section Start */}
       <Blog />
       {/* Blog Section End */}
+
+      {/* Contact Section Start */}
+      <Contact />
+      {/* Contact Section End */}
 
     </Layout>
   )

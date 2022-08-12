@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Header() {
@@ -45,6 +44,11 @@ export default function Header() {
                 <li className="group">
                   <Link href="#blog">
                     <a className="flex py-2 mx-8 text-base text-dark group-hover:text-primary dark:text-white">Blog</a>
+                  </Link>
+                </li>
+                <li className="group">
+                  <Link href="#contact">
+                    <a className="flex py-2 mx-8 text-base text-dark group-hover:text-primary dark:text-white">Contact</a>
                   </Link>
                 </li>
                 <li className="flex items-center pl-8 mt-3 lg:mt-0">
