@@ -1,4 +1,3 @@
 kekurangan
-- SEO
 - arah bawah di klik langsung kembali ke atas
 - sesi contact lngsung kirim ke email

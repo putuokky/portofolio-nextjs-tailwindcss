@@ -2,12 +2,8 @@ import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
   return (
-    <Html className='scroll-smooth' lang='en'>
-      <Head>
-        <meta name="description" content="Portofolio My Sites" />
-        <meta name="keywords" content="HTML, CSS, JavaScript, NextJS, Computer, Portofolio" />
-        <meta name="author" content="Okky Maheswara" />
-      </Head>
+    <Html>
+      <Head />
       <body>
         <Main />
         <NextScript />
