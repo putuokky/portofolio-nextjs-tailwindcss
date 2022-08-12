@@ -1,8 +1,33 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
+import { BsFillSunFill, BsMoonStarsFill } from 'react-icons/bs'
+import { useTheme } from 'next-themes'
 
 export default function Header() {
+  const { systemTheme, theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const [activeNavbar, setActiveNavbar] = useState(false);
+
+  const renderThemeChanger = () => {
+    if (!mounted) return null;
+
+    const currentTheme = theme === 'system' ? systemTheme : theme;
+
+    if (currentTheme === 'dark') {
+      return (
+        <button onClick={() => setTheme('light')}><BsFillSunFill className="text-2xl transition duration-500 ease-in-out" /></button>
+      )
+    } else {
+      return (
+        <button onClick={() => setTheme('dark')}><BsMoonStarsFill className="text-xl transition duration-500 ease-in-out" /></button>
+      )
+    }
+  }
 
   return (
     <header className="sticky top-0 left-0 z-10 flex items-center w-full bg-transparent navbar-fixed">
@@ -53,14 +78,7 @@ export default function Header() {
                 </li>
                 <li className="flex items-center pl-8 mt-3 lg:mt-0">
                   <div className="flex">
-                    <span className="mr-2 text-sm text-slate-500">light</span>
-                    <input type="checkbox" className="hidden" id="dark-toggle" />
-                    <label htmlFor="dark-toggle">
-                      <div className="flex items-center h-5 p-1 rounded-full cursor-pointer w-9 bg-slate-500">
-                        <div className="w-4 h-4 transition duration-300 ease-in-out bg-white rounded-full toggle-circle"></div>
-                      </div>
-                    </label>
-                    <span className="ml-2 text-sm text-slate-500">dark</span>
+                    {renderThemeChanger()}
                   </div>
                 </li>
               </ul>
