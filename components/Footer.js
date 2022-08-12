@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Name from './Name'
 import Social from './Social'
 
 export default function Footer() {
@@ -7,7 +8,7 @@ export default function Footer() {
       <div className="container">
         <div className='flex flex-wrap'>
           <div className='w-full px-4 mb-12 font-medium text-slate-300 md:w-1/3'>
-            <h2 className='mb-5 text-4xl font-bold text-white uppercase'>Joe Marley</h2>
+            <h2 className='mb-5 text-4xl font-bold text-white capitalize'><Name /></h2>
             <h3 className='mb-2 text-2xl font-bold'>Hubungi Kami</h3>
             <p>nama-email@gmail.com</p>
             <p>Jalan Raya Sesetan</p>

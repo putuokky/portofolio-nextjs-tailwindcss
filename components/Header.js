@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { BsFillSunFill, BsMoonStarsFill } from 'react-icons/bs'
 import { useTheme } from 'next-themes'
+import Name from "./Name";
 
 export default function Header() {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -35,7 +36,7 @@ export default function Header() {
         <div className="relative flex items-center justify-between">
           <div className="px-4">
             <Link href="/">
-              <a className="block py-6 font-serif text-3xl font-bold uppercase text-primary hover:text-primary/70">Joe Marley</a>
+              <a className="block py-6 font-serif text-3xl font-bold uppercase text-primary hover:text-primary/70"><Name /></a>
             </Link>
           </div>
           <div className="flex items-center px-4">

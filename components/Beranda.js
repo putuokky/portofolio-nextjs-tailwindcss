@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import ME from "../public/img/sandhika.png";
+import Name from './Name';
 
 export default function Beranda() {
   return (
@@ -8,7 +9,7 @@ export default function Beranda() {
       <div className="container">
         <div className="flex flex-wrap">
           <div className="self-center w-full px-4 lg:w-1/2">
-            <h1 className="text-base font-semibold text-primary md:text-xl">Hallo Semua 🤞👏, saya <span className="block mt-1 text-4xl font-bold text-dark lg:text-5xl dark:text-white">Joe Marley</span></h1>
+            <h1 className="text-base font-semibold text-primary md:text-xl">Hallo Semua 🤞👏, saya <span className="block mt-1 text-4xl font-bold capitalize text-dark lg:text-5xl dark:text-white"><Name /></span></h1>
             <h2 className="mt-2 mb-5 text-lg font-medium text-secondary lg:text-2xl">Developer & <span className="text-dark dark:text-white">Content Creator</span></h2>
             <p className="mb-10 font-medium leading-relaxed text-secondary">Belajar web programming itu mudah dan menyenangkan bukan. <span className="font-bold text-dark dark:text-white">bukann!</span></p>
             <Link href="mailto:nama-email@gmail.com">
