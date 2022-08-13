@@ -48,7 +48,7 @@ export default function Header() {
             <nav onClick={() => setActiveNavbar(!activeNavbar)} className={`absolute py-5 bg-white shadow-lg rounded-b-xl max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:lg:bg-transparent dark:shadow-slate-700 ${activeNavbar ? '' : 'hidden'}`}>
               <ul className="block lg:flex">
                 <li className="group">
-                  <Link href="#">
+                  <Link href="/">
                     <a className="flex py-2 mx-8 text-base text-dark group-hover:text-primary dark:text-white">Beranda</a>
                   </Link>
                 </li>

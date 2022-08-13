@@ -72,7 +72,7 @@ export default function Footer() {
         </div>
         <div className="w-full pt-10 border-t border-slate-700">
           <div className="flex items-center justify-center mb-5">
-            <Social />
+            <Social className="text-slate-300" />
           </div>
           <p className="text-xs font-medium text-center text-slate-500">
             Copyright &copy; {new Date().getFullYear()}. All rights reserved.<br />

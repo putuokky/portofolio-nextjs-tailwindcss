@@ -14,7 +14,7 @@ export default function About() {
             <h3 className="mb-4 text-2xl font-semibold text-dark lg:text-3xl lg:pt-10 dark:text-white">Mari berteman</h3>
             <p className="mb-6 text-base font-medium text-secondary lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet veritatis maiores facilis enim mollitia nam dolorem ipsum quisquam?</p>
             <div className="flex items-center">
-              <Social />
+              <Social className="border-dark dark:border-slate-300" />
             </div>
           </div>
         </div>

@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Blog() {
   return (
-    <section id="blog" className="pb-32 pt-36 bg-slate-100 dark:bg-dark">
+    <section id="blog" className="pb-32 pt-36 bg-slate-200 dark:bg-dark">
       <div className="container">
         <div className="w-full px-4">
           <div className="max-w-lg mx-auto mb-16 text-center">
@@ -19,7 +19,7 @@ export default function Blog() {
               <div className="px-6 py-8">
                 <h3>
                   <Link href="#">
-                    <a className="block mb-3 text-xl font-semibold truncate text-dark hover:text-primary dark:text-white">Tips Belajar Programming</a>
+                    <a className="block mb-3 text-xl font-semibold truncate text-dark hover:text-primary dark:text-white dark:hover:text-primary">Tips Belajar Programming</a>
                   </Link>
                 </h3>
                 <p className="mb-6 text-base font-medium truncate text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, similique.</p>
@@ -35,7 +35,7 @@ export default function Blog() {
               <div className="px-6 py-8">
                 <h3>
                   <Link href="#">
-                    <a className="block mb-3 text-xl font-semibold truncate text-dark hover:text-primary dark:text-white">Review Keyboad Mechanical Terbaru</a>
+                    <a className="block mb-3 text-xl font-semibold truncate text-dark hover:text-primary dark:text-white dark:hover:text-primary">Review Keyboad Mechanical Terbaru</a>
                   </Link>
                 </h3>
                 <p className="mb-6 text-base font-medium truncate text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et molestiae rerum repellat?</p>
@@ -51,7 +51,7 @@ export default function Blog() {
               <div className="px-6 py-8">
                 <h3>
                   <Link href="#">
-                    <a className="block mb-3 text-xl font-semibold truncate text-dark hover:text-primary dark:text-white">Menikmati Coffe Disaat Ngoding</a>
+                    <a className="block mb-3 text-xl font-semibold truncate text-dark hover:text-primary dark:text-white dark:hover:text-primary">Menikmati Coffe Disaat Ngoding</a>
                   </Link>
                 </h3>
                 <p className="mb-6 text-base font-medium truncate text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores veniam repellendus eum.</p>

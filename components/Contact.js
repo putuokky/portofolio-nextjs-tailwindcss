@@ -1,12 +1,12 @@
 
 export default function Contact() {
   return (
-    <section id="contact" className="pb-32 pt-36">
+    <section id="contact" className="pb-32 pt-36 bg-slate-800">
       <div className="container">
         <div className="w-full px-4">
           <div className="max-w-xl mx-auto mb-16 text-center">
             <h4 className="mb-2 text-lg font-semibold text-primary">Contact</h4>
-            <h2 className="mb-4 text-3xl font-medium text-dark sm:text-4xl lg:text-5xl dark:text-white">Hubungi Kami</h2>
+            <h2 className="mb-4 text-3xl font-medium text-white sm:text-4xl lg:text-5xl">Hubungi Kami</h2>
             <p className="font-medium text-secondary md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, nostrum.</p>
           </div>
         </div>
